@@ -1,0 +1,13 @@
+﻿@model Bandet.Models.Band[]
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	</head>
+	<body>
+		@foreach (var item in Model)
+		{
+			<a href="/band/@item.Id">@item.Name</a>
+			<br />
+		}
+	</body>
+</html>

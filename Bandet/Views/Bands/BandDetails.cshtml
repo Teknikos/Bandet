@@ -1,0 +1,22 @@
+﻿@model Bandet.Models.Band
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	</head>
+	<body>
+		<h2>@Model.Name</h2>
+		<p>@Model.Description</p>
+		@if (Model.Name == "Green Day")
+		{
+		<img src="https://www.fkpscorpio.se///wp-content/uploads/2017/01/GreenDay_FB.jpg" width="400px" height="350px"/>
+		}
+		@if (Model.Name == "Kreator")
+		{
+		<img src="https://cdn.mos.cms.futurecdn.net/MLsGcQQsyegfbUcincmVsD.jpg" width="400px" height="350px" />
+		}
+		@if (Model.Name == "Ludovic Einaudi")
+		{
+		<img src="https://imgs.classicfm.com/images/256933?crop=16_9&width=660&relax=1&signature=uHnBlPx-EBarLA-I-8q2vBpaYLA=" width="400px" height="350px" />
+		}
+</body>
+</html>
